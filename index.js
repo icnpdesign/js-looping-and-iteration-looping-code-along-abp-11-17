@@ -14,7 +14,8 @@ function tailsNeverFails (streak) {
   let coin = Math.random();
   let streak = 0;
   while (coin >= 0.5) {
-  streak ++;
+   streak ++;
+   tailsNeverFails ();
   }
   console.log (`You got ${streak} tails in a row!`);
 }

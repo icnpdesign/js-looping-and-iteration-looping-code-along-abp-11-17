@@ -10,7 +10,7 @@ function printBadges (names) {
 printBadges(names);
 
 
-function tailsNeverFails (streak) {
+function tailsNeverFails () {
   let coin = Math.random();
   let streak = 0;
   while (coin >= 0.5) {

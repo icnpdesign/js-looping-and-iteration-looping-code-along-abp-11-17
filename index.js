@@ -20,4 +20,4 @@ function tailsNeverFails (streak) {
   console.log (`You got ${streak} tails in a row!`);
 }
 
-tailsNeverFails(streak);
+

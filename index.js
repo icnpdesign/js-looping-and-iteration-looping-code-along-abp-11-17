@@ -9,15 +9,16 @@ function printBadges (names) {
 }
 printBadges(names);
 
-
-function tailsNeverFails (streak) {
-  let coin = Math.random();
-  let streak = 0;
-  while (coin >= 0.5) {
-   streak ++;
-   tailsNeverFails (streak);
-  }
-  console.log (`You got ${streak} tails in a row!`);
+function maybeTrue() {
+  return Math.random() <= 0.5;
 }
 
+function tailsNeverFails () {
+  let tails = 0;
+  while (maybeTrue()) {
+   tails++;
+  }
+  return (`You got ${tails} tails in a row!`);
+}
 
+tailsNeverFails();
